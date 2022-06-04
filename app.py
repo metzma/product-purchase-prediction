@@ -6,7 +6,7 @@ import pandas as pd
 
 
 # instantiate the web-app
-app = Flask(__name__)
+app=Flask(__name__,template_folder='templates')
 
 # load our model pipeline object
 model = joblib.load("model.joblib")
